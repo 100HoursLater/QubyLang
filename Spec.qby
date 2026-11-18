@@ -24,6 +24,9 @@ function main(): {
 >= # more than equals
 ++ # iterator up
 -- # iterator down
+and # logical and
+or # logical or
+! # prefix: logical NOT
 
 == # compare 
 = # assignment 
@@ -140,6 +143,34 @@ YOU::WE.I;
 class u extend YOU {
 };
 
+# if statements
+
+if (): {
+
+} elif (): {
+
+} else {
+
+};
+
+# switch
+
+switch(): {
+ case something {
+
+ };
+ case something_else {
+
+ };
+
+ case something_something_else {
+
+ };
+
+ default {
+
+ };
+};
 
 
 @EOF # end of file, how you exit a program
