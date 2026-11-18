@@ -5,8 +5,8 @@ $Network
 
 # networking example
 function main(): {
-    JSON:{<CreateNewArray> for each <DeviceIP>};
-    JSON:{<CreateNewObject> for each <PublicIP<Number>>};
+    JSON:{<CreateNewArray> for_each <DeviceIP>};
+    JSON:{<CreateNewObject> for_each <PublicIP<Number>>};
 };
 
 
@@ -37,16 +37,17 @@ $var # mutable variable declaration word
 $const # constant variable declaration word
 
 ## mutable 
-$var i = 1; # integer 
-$var k = 1.0; # float
-$var n = ""; # string
-$var b = true; # boolean 
+$var i = 1; # integer
+$var K = 1.0; # float
+$var N = ""; # string
+$var B = true; # boolean 
 
 ## constant 
-$const i = 1; # integer 
+$const I = 1; # integer 
 $const k = 1.0; # float
 $const n = ""; # string
 $const b = true; # boolean 
+
 
 ## optional 
 
@@ -82,7 +83,7 @@ construct: PublicIP = {
 
 # parent construction
 
-parent: JSON = {
+parent:  = {
     # this is how we get the JSON:{}; pattern. 
 };
 
@@ -101,8 +102,8 @@ e:[
 # for and for each
 
 
-for($var i = 1; i <= 100; i++): {
-    if (i % 15 == 0) {
+for($var Q = 1; Q <= 100; Q++): {
+    if (Q % 15 == 0) {
         print("FizzBuzz");
     };
 };
@@ -126,22 +127,6 @@ function IloveIt(): {
 };
 
 IloveIt.IReallyLoveIt;
-
-## OOP 
-
-class YOU {
-    function WE(): {
-        function I(): {
-
-        };
-    };
-};
-
-YOU::WE.I;
-
-# inheritence
-class u extend YOU {
-};
 
 # if statements
 
