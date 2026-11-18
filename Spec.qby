@@ -1,0 +1,150 @@
+@BOF # Beginning of File, entry into the program
+$JSON #import
+$Network
+# spec 
+
+# networking example
+function main(): {
+    JSON:{<CreateNewArray> for each <DeviceIP>};
+    JSON:{<CreateNewObject> for each <PublicIP<Number>>};
+};
+
+
+# operators
+
++ # addition
+- # subtraction
+/ # division 
+* # multiply 
+% # modulo 
+; # statement and block terminator
+< # less than
+> # more than
+<= # less than equals
+>= # more than equals
+++ # iterator up
+-- # iterator down
+
+== # compare 
+= # assignment 
+
+# variables and types
+
+$var # mutable variable declaration word
+$const # constant variable declaration word
+
+## mutable 
+$var i = 1; # integer 
+$var k = 1.0; # float
+$var n = ""; # string
+$var b = true; # boolean 
+
+## constant 
+$const i = 1; # integer 
+$const k = 1.0; # float
+$const n = ""; # string
+$const b = true; # boolean 
+
+## optional 
+
+$var ba = true?;
+
+## functions
+
+function # function declaration keywrod
+
+function main(): {}; # main function
+
+# structurcing 
+
+section: RANDOM; 
+end_section: RANDOM;
+
+# construction usage 
+
+construct: DeviceIP = {
+  # logic here
+};
+
+<DeviceIP> 
+
+
+construct: PublicIP = {
+    construct: Number = {
+        # logic here
+    };
+};
+
+<PublicIP<Number>>
+
+# parent construction
+
+parent: JSON = {
+    # this is how we get the JSON:{}; pattern. 
+};
+
+$var h = Enumeration.CreateNew:{};
+
+h:{
+    # fill out your enum
+};
+
+$var e = Array.CreateNew[];
+
+e:[
+    # fill out your array here
+];
+
+# for and for each
+
+
+for($var i = 1; i <= 100; i++): {
+    if (i % 15 == 0) {
+        print("FizzBuzz");
+    };
+};
+
+# for each is different, the above usage is correct but also
+
+for_each(e; :ITEM; e++): {
+  # it goes through each item in the array
+};
+
+for_each(h; :OBJECT; h++) {
+    # it goes through each Object in the enum
+};
+
+# function stacking 
+
+function IloveIt(): {
+    function IReallyLoveIt(): {
+
+    };
+};
+
+IloveIt.IReallyLoveIt;
+
+## OOP 
+
+class YOU {
+    function WE(): {
+        function I(): {
+
+        };
+    };
+};
+
+YOU::WE.I;
+
+# inheritence
+class u extend YOU {
+};
+
+
+
+@EOF # end of file, how you exit a program
+
+
+
+
+
